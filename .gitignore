@@ -1,0 +1,98 @@
+####################################
+# macOS (any depth)
+####################################
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/.fseventsd
+**/.VolumeIcon.icns
+
+####################################
+# Linux (any depth)
+####################################
+**/*~
+**/.fuse_hidden*
+**/.directory
+**/.Trash-*
+**/.nfs*
+
+####################################
+# Node.js (any depth)
+####################################
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Build / cache
+**/.cache/
+**/.parcel-cache/
+**/.next/
+**/.nuxt/
+**/dist/
+**/build/
+**/out/
+
+####################################
+# Logs
+####################################
+**/logs/
+**/*.log
+
+####################################
+# Environment variables
+####################################
+**/.env
+**/.env.*
+!**/.env.example
+
+####################################
+# IDEs / Editors
+####################################
+**/.idea/
+**/*.iml
+
+# VS Code (allow shared configs)
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/extensions.json
+!**/.vscode/launch.json
+!**/.vscode/tasks.json
+
+####################################
+# OS / Temp files
+####################################
+**/Thumbs.db
+**/ehthumbs.db
+**/Desktop.ini
+
+**/*.swp
+**/*.swo
+**/*.tmp
+**/*.temp
+
+####################################
+# Coverage / Test output
+####################################
+**/coverage/
+**/.nyc_output/
+
+####################################
+# Archives
+####################################
+#**/*.zip
+#**/*.tar
+#**/*.tar.gz
+#**/*.rar
+#**/*.7z
+
+####################################
+# Misc
+####################################
+**/*.pid
+**/*.seed
+**/*.pid.lock
