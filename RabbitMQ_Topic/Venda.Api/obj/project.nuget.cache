@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bVbxnWhVl3U=",
+  "success": true,
+  "projectFilePath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Venda.Api/Venda.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/fernandopassaia/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "/Users/fernandopassaia/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/Users/fernandopassaia/.nuget/packages/rabbitmq.client/7.2.1/rabbitmq.client.7.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
