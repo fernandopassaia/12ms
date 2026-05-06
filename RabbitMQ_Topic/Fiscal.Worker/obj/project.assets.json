@@ -1602,11 +1602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Fiscal.Worker/Fiscal.Worker.csproj",
+      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Fiscal.Worker/Fiscal.Worker.csproj",
       "projectName": "Fiscal.Worker",
-      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Fiscal.Worker/Fiscal.Worker.csproj",
+      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Fiscal.Worker/Fiscal.Worker.csproj",
       "packagesPath": "/Users/fernandopassaia/.nuget/packages/",
-      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Fiscal.Worker/obj/",
+      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Fiscal.Worker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fernandopassaia/.nuget/NuGet/NuGet.Config"

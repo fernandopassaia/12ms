@@ -119,11 +119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Venda.Api/Venda.Api.csproj",
+      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Venda.Api/Venda.Api.csproj",
       "projectName": "Venda.Api",
-      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Venda.Api/Venda.Api.csproj",
+      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Venda.Api/Venda.Api.csproj",
       "packagesPath": "/Users/fernandopassaia/.nuget/packages/",
-      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Venda.Api/obj/",
+      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Venda.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fernandopassaia/.nuget/NuGet/NuGet.Config"

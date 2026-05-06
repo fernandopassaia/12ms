@@ -29,7 +29,7 @@ public class RabbitMqWorker : BackgroundService
         // Garante exchange (mesma do producer)
         await _channel.ExchangeDeclareAsync(
             exchange: EXCHANGE_NAME,
-            type: ExchangeType.Fanout,
+            type: ExchangeType.Topic,
             durable: true
         );
 
@@ -45,7 +45,7 @@ public class RabbitMqWorker : BackgroundService
         await _channel.QueueBindAsync(
             queue: QUEUE_NAME,
             exchange: EXCHANGE_NAME,
-            routingKey: ""
+            routingKey: "venda.criada"
         );
 
         Console.WriteLine("📦 Notification Worker aguardando mensagens...");
@@ -66,7 +66,7 @@ public class RabbitMqWorker : BackgroundService
                 Console.WriteLine($"Itens: {ordem?.Itens.Count}");
 
                 // Simula processamento
-                await Task.Delay(500);
+                await Task.Delay(5000);
 
                 // ACK manual
                 await _channel.BasicAckAsync(ea.DeliveryTag, multiple: false);

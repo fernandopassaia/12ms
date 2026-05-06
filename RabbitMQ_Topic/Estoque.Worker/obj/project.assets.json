@@ -1602,11 +1602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Estoque.Worker/Estoque.Worker.csproj",
+      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Estoque.Worker/Estoque.Worker.csproj",
       "projectName": "Estoque.Worker",
-      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Estoque.Worker/Estoque.Worker.csproj",
+      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Estoque.Worker/Estoque.Worker.csproj",
       "packagesPath": "/Users/fernandopassaia/.nuget/packages/",
-      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Estoque.Worker/obj/",
+      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Estoque.Worker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fernandopassaia/.nuget/NuGet/NuGet.Config"

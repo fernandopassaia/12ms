@@ -21,18 +21,36 @@ public class OrdemDeVendaController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CriarVenda([FromBody] OrdemDeVenda venda)
     {
-        if (venda is null)
-            return BadRequest("Venda inválida");
-
-        if (venda.Itens == null || !venda.Itens.Any())
-            return BadRequest("Venda precisa ter itens");
-
-        await _rabbitMqService.PublicarVendaAsync(venda);
+        await _rabbitMqService.PublicarEventoAsync(
+        venda,
+        "venda.criada"
+    );
 
         return Ok(new
         {
-            mensagem = "Venda enviada para processamento assíncrono",
+            mensagem = "Venda criada",
             vendaId = venda.Id
+        });
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> ExcluirVenda(Guid id)
+    {
+        var venda = new OrdemDeVenda
+        {
+            Id = id,
+            NomeCliente = "Fernando"
+        };
+
+        await _rabbitMqService.PublicarEventoAsync(
+            venda,
+            "venda.excluida"
+        );
+
+        return Ok(new
+        {
+            mensagem = "Venda excluída",
+            vendaId = id
         });
     }
 }

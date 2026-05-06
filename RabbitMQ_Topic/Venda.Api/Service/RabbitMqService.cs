@@ -25,12 +25,14 @@ public class RabbitMqService
 
         await _channel.ExchangeDeclareAsync(
             exchange: EXCHANGE_NAME,
-            type: ExchangeType.Fanout, // nota: No Fanout todo mundo que ouvir a Exchange recebe a mensagem
+            type: ExchangeType.Topic, // nota: No Fanout todo mundo que ouvir a Exchange recebe a mensagem
             durable: true
         );
     }
 
-    public async Task PublicarVendaAsync(OrdemDeVenda venda)
+    public async Task PublicarEventoAsync(
+    OrdemDeVenda venda,
+    string routingKey)
     {
         if (_channel is null)
             throw new Exception("RabbitMQ não inicializado");
@@ -45,12 +47,12 @@ public class RabbitMqService
 
         await _channel.BasicPublishAsync(
             exchange: EXCHANGE_NAME,
-            routingKey: "",
+            routingKey: routingKey,
             mandatory: false,
             basicProperties: properties,
             body: body
         );
 
-        Console.WriteLine("📤 Venda publicada no RabbitMQ");
+        Console.WriteLine($"📤 Evento publicado: {routingKey}");
     }
 }

@@ -1602,11 +1602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Notification.Worker/Notification.Worker.csproj",
+      "projectUniqueName": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Notification.Worker/Notification.Worker.csproj",
       "projectName": "Notification.Worker",
-      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Notification.Worker/Notification.Worker.csproj",
+      "projectPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Notification.Worker/Notification.Worker.csproj",
       "packagesPath": "/Users/fernandopassaia/.nuget/packages/",
-      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ/Notification.Worker/obj/",
+      "outputPath": "/Users/fernandopassaia/Repositories/studies2026/12MS/RabbitMQ_Topic/Notification.Worker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fernandopassaia/.nuget/NuGet/NuGet.Config"
