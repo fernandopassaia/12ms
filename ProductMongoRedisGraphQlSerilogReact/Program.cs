@@ -4,6 +4,8 @@ using ProductMongoRedisGraphQlSerilogReact.Services;
 using ProductMongoRedisGraphQlSerilogReact.Interfaces;
 using StackExchange.Redis;
 using Serilog;
+using ProductMongoRedisGraphQlSerilogReact.GraphQL;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,12 @@ builder.Host.UseSerilog();
 
 builder.Services.Configure<MongoDbSettings>(
     builder.Configuration.GetSection("MongoDbSettings"));
+
+// adiciona os Resolvers do GraphQL
+builder.Services
+    .AddGraphQLServer()
+    .AddQueryType<ProductQuery>()
+    .AddMutationType<ProductMutation>();
 
 builder.Services.AddScoped<ICacheService, CacheService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -32,6 +40,8 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(
 var app = builder.Build();
 
 app.UseSwagger();
+
+app.MapGraphQL();
 
 app.UseSwaggerUI();
 
