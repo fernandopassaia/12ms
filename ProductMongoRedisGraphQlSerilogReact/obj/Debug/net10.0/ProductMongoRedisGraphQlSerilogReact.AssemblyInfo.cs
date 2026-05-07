@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductMongoRedisGraphQlSerilogReact")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2143f305f8f812c3d28602b7fb267b785316214c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb6c43f67c530300a5971d28425551616e5545ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductMongoRedisGraphQlSerilogReact")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductMongoRedisGraphQlSerilogReact")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
