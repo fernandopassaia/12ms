@@ -1,0 +1,30 @@
+services:
+  mongodb:
+    image: mongo:8
+    container_name: mongodb
+
+    ports:
+      - "27017:27017"
+
+    environment:
+      MONGO_INITDB_DATABASE: ProductMongoRedisGraphQlSerilogReact
+
+  mongo-express:
+    image: mongo-express:1
+    container_name: mongo-express
+
+    ports:
+      - "8081:8081"
+
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+
+    depends_on:
+      - mongodb
+
+  redis:
+    image: redis:8
+    container_name: redis
+
+    ports:
+      - "6379:6379"
