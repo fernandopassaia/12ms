@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AOI34WVG8OA=",
+  "success": true,
+  "projectFilePath": "/Users/fernandopassaia/Repositories/studies2026/12MS/ProductMongoRedisGraphQlSerilogReact/ProductMongoRedisGraphQlSerilogReact.csproj",
+  "expectedPackageFiles": [
+    "/Users/fernandopassaia/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "/Users/fernandopassaia/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
